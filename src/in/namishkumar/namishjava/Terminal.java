@@ -16,6 +16,12 @@ public class Terminal {
            System.out.print(object);
        }
     }
+
+    public static void writeLoop(int Times, Object object) {
+     for(int x = 0; x <= Times - 1; x++) {
+         Terminal.writeLine(object);
+     }
+ }
      public static void main(String[] args) {
          
     }
