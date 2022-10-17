@@ -1,5 +1,5 @@
 package in.namishkumar.namishjava;
-
+/*  Welcome to NamishJava build by Namish Kumar in October 2022 */
 public class Terminal {
     public static void writeLine(Object object) {
           if(object == null) {
@@ -23,7 +23,7 @@ public class Terminal {
      }
  }
      public static void main(String[] args) {
-         
+         return null;
     }
    
     
