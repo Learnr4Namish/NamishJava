@@ -1,26 +1,38 @@
+// NamishMath Package
+/* Use in.namishkumar.namishjava.NamishMath 
+                   OR
+                ________
+/* Use in.namishkumar.namishjava.* to import */
 package in.namishkumar.namishjava;
 
 // Welcome to NamishMath! Made by Namish Kumar in October 2022
 
 /* NamishMath 1.0.0 built for NamishJava 1.0.0
-Latest update on 24 October 2022 */
+Latest update on 25 October 2022 */
 import java.lang.Math;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 // Main NamishMath class
 public class NamishMath {
+    // NamishMath main void()
     public static void main(String[] args) {
     }
 
+    // The PI value
+    final static double PIval = 3.14159265;
+
+    // The PI-Approx value
+    final static double piApproxVal = 3.14;
+
     // Returns the value of PI approximated to 8 decimal places
     public static double pi() {
-        return 3.14159265;
+        return PIval;
     }
 
     // Returns the value of PI approximated to 2 decimal places
     public static double piApprox() {
-        return 3.14;
+        return piApproxVal;
     }
 
     // Finds the Cosine of any angle
@@ -58,6 +70,26 @@ public class NamishMath {
     // Finds the smallest number of the array of numbers
     public static int findMaxAll(Array ArrayOfNumbers) {
         return 0;
+    }
+
+    // Finds the Square of a number
+    public static double findSquare(double n) {
+        return n * n;
+    }
+
+    // Finds the Cube of a number
+    public static double findCube(double n) {
+        return n * n * n;
+    }
+
+    // Finds the Square-root of a number
+    public static double sqrt(double n) {
+        return Math.sqrt(n);
+    }
+
+    // Finds the Cube-Root of a number
+    public static double cbrt(double n) {
+        return Math.cbrt(n);
     }
 
     // Finds the successor or adds 1 to a given number
@@ -120,6 +152,56 @@ public class NamishMath {
             x = 0;
         }
         return 0;
+    }
+
+    // Adds 1 to a given number
+    public static int Add1(int n) {
+        return n + 1;
+    }
+
+    // Adds 2 to a given number
+    public static int Add2(int n) {
+        return n + 2;
+    }
+
+    // Adds 3 to a given number
+    public static int Add3(int n) {
+        return n + 3;
+    }
+
+    // Adds 4 to a given number
+    public static int Add4(int n) {
+        return n + 4;
+    }
+
+    // Adds 5 to a given number
+    public static int Add5(int n) {
+        return n + 5;
+    }
+
+    // Adds 6 to a given number
+    public static int Add6(int n) {
+        return n + 6;
+    }
+
+    // Adds 7 to a given number
+    public static int Add7(int n) {
+        return n + 7;
+    }
+
+    // Adds 8 to a given number
+    public static int Add8(int n) {
+        return n + 8;
+    }
+
+    // Adds 9 to a given number
+    public static int Add9(int n) {
+        return n + 9;
+    }
+
+    // Adds 10 to a given number
+    public static int Add10(int n) {
+        return n + 10;
     }
 
     // Finds the predessor or subtracts 1 from a given number
@@ -260,6 +342,148 @@ public class NamishMath {
         return Century() / n;
     }
 
+    // Returns the value of a Millennium
+    public static int Millennium() {
+        return 1000;
+    }
+
+    // Returns the value of a Half-Millenium
+    public static int HalfMillennium() {
+        return Millennium() / 2;
+    }
+
     // Mensuration Zone
 
+    public class Mensuration {
+        // Square Zone
+        public class Square {
+            // Finds the area of a square
+            public static String Area(double sideLength, String Unit) {
+                double area = NamishMath.findSquare(sideLength);
+                return String.valueOf(area) + " " + Unit + "²";
+            }
+
+            // Finds the magnitude of the Area and returns as a double
+            public static double AreaMagnitude(double sideLength, String Unit) {
+                double area = NamishMath.findSquare(sideLength);
+                return area;
+            }
+
+            // Finds the side-length of a square
+            /*
+             * ||NOTICE|| ! The Unit in Side() needs to be in non-square format. For
+             * example, don't type M². Type M only! If done so, it will return the side in
+             * M² too!
+             */
+            public static String Side(double area, String Unit) {
+                // Find the Square-Root of the area
+                double sideLength = NamishMath.sqrt(area);
+                // Convert it to string
+                String sideStr = String.valueOf(sideLength);
+                // Temporary gap
+                String tempGap = " ";
+                // Return the side-length now
+                return sideStr + tempGap + Unit;
+            }
+
+            // Finds the megnitude of the side Length and returns as a double
+            public static double SideMagnitude(double area) {
+                // Find the Square-Root of the area
+                double sideLength = NamishMath.sqrt(area);
+                return sideLength;
+            }
+
+            // Finds the length of the diagonal
+            public static String Diagonal(double side, String Unit) {
+                return String.valueOf(side) + "√2";
+            }
+
+            // Finds the Perimeter of the square
+            public static String Perimeter(double side, String Unit) {
+                double SideLength = side;
+                double PeriLength = 4 * SideLength;
+                return String.valueOf(PeriLength) + " " + Unit;
+            }
+        }
+
+        // Rectangle zone
+        public class Rectangle {
+            // Finds the area of the Rectangle
+            public static String Area(double length, double width, String Unit) {
+                double area = length * width;
+                return String.valueOf(area) + " " + Unit + "²";
+            }
+
+            /*
+             * Finds the Length of the rectangle from its breadth and area
+             * ||NOTICE|| ! The Unit in Length() needs to be in non-square format. For
+             * example, don't type M². Type M only! If done so, it will return the length in
+             * M² too!
+             */
+
+            public static String Length(double width, double area, String Unit) {
+                double length = area / width;
+                return String.valueOf(length) + Unit;
+            }
+
+            /*
+             * Finds the Width of the rectangle from its length and area
+             * ||NOTICE|| ! The Unit in Breadth() needs to be in non-square format. For
+             * example, don't type M². Type M only! If done so, it will return the length in
+             * M² too!
+             */
+
+            public static String Breadth(double Length, double area, String Unit) {
+                double b = area / Length;
+                return String.valueOf(b) + Unit;
+            }
+
+            // ! Same Void ! //
+            public static String Width(double Length, double area, String Unit) {
+                double b = area / Length;
+                return String.valueOf(b) + Unit;
+            }
+
+            /*
+             * Uses Pythagoras Theorem
+             * A² + B² = C²
+             * A is the Length, B is the breadth and C is the diagonal
+             * So,
+             * C = √(A² + B²)
+             */
+            // Finds the Diagonal using the above principle
+            public static String Diagonal(double length, double breadth, String Unit) {
+                double lengthSquare = NamishMath.findSquare(length);
+                double breadthSquare = NamishMath.findSquare(breadth);
+                double lbSum = lengthSquare + breadthSquare;
+                double diagonalLength = NamishMath.sqrt(lbSum);
+                return String.valueOf(diagonalLength) + " " + Unit;
+            }
+        }
+    }
+
+    // The Unit-Converter class
+
+    // First Introduced in NamishJava 1.0.1 and NamishMath 1.0.1
+    // Latest Update on 25 October 2022
+    public class UnitConverter {
+
+    }
+
+    // Pythagoream Triplet class
+    public class PythagoreamTriplet {
+        /*
+         * Find out all the numbers of a pythagoream triplet
+         * || NOTICE || , The number to be entered must be a even number!
+         */
+
+        public static double[] FindAll(int n2) {
+            double n = n2 / 2;
+            double nsq1 = NamishMath.findSquare(n);
+            double mainNsq1 = nsq1 + 1;
+            double mainNsq2 = nsq1 - 1;
+            double[] pyt = { n2, mainNsq1, mainNsq2 };
+            return pyt;
+        }
+    }
 }
