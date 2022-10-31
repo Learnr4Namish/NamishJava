@@ -1,6 +1,9 @@
 package in.namishkumar.namishjava;
 
 public class Mensuration {
+    // Welcome to NamishJava
+    // Welcome to Mensuration.class built for NamishJava
+    // Latest update on 31 October 2022
     public static void main(String[] args) {
 
     }

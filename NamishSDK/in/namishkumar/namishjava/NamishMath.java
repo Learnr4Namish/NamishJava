@@ -22,6 +22,9 @@ public class NamishMath {
     // The PI value
     final static double PIval = 3.14159265;
 
+    // The Square Unit
+    final static String SqUnit = "²";
+
     // The PI-Approx value
     final static double piApproxVal = 3.14;
 
@@ -48,27 +51,27 @@ public class NamishMath {
     }
 
     // Finds the absolute value of any angle
-    public static int findAbs(int number) {
+    public static double findAbs(double number) {
         return Math.abs(number);
     }
 
     // Finds the smallest number of the two numbers
-    public static int findMin(int number1, int number2) {
+    public static double findMin(double number1, double number2) {
         return Math.min(number1, number2);
     }
 
     // Finds the smallest number of the array of numbers
-    public static int findMinAll(Array ArrayOfNumbers) {
+    public static double findMinAll(Array ArrayOfNumbers) {
         return 0;
     }
 
     // Finds the maximum/biggest number of the two numbers
-    public static int findMax(int number1, int number2) {
+    public static double findMax(double number1, double number2) {
         return Math.max(number1, number2);
     }
 
     // Finds the smallest number of the array of numbers
-    public static int findMaxAll(Array ArrayOfNumbers) {
+    public static double findMaxAll(Array ArrayOfNumbers) {
         return 0;
     }
 
@@ -93,263 +96,454 @@ public class NamishMath {
     }
 
     // Finds the successor or adds 1 to a given number
-    public static int Increment(int n) {
+    public static double Increment(double n) {
         return n + 1;
     }
 
     // Adds two given numbers
-    public static int AddTwoNumbers(int n1, int n2) {
+    public static double AddTwoNumbers(double n1, double n2) {
         return n1 + n2;
     }
 
     // Adds three given numbers
-    public static int AddThreeNumbers(int n1, int n2, int n3) {
+    public static double AddThreeNumbers(double n1, double n2, double n3) {
         return n1 + n2 + n3;
     }
 
     // Adds four given numbers
-    public static int AddFourNumbers(int n1, int n2, int n3, int n4) {
+    public static double AddFourNumbers(double n1, double n2, double n3, double n4) {
         return n1 + n2 + n3 + n4;
     }
 
     // Adds five given numbers
-    public static int AddFiveNumbers(int n1, int n2, int n3, int n4, int n5) {
+    public static double AddFiveNumbers(double n1, double n2, double n3, double n4, double n5) {
         return n1 + n2 + n3 + n4 + n5;
     }
 
     // Adds six given numbers
-    public static int AddSixNumbers(int n1, int n2, int n3, int n4, int n5, int n6) {
+    public static double AddSixNumbers(double n1, double n2, double n3, double n4, double n5, double n6) {
         return n1 + n2 + n3 + n4 + n5 + n6;
     }
 
     // Adds seven given numbers
-    public static int AddSevenNumbers(int n1, int n2, int n3, int n4, int n5, int n6, int n7) {
+    public static double AddSevenNumbers(double n1, double n2, double n3, double n4, double n5, double n6, double n7) {
         return n1 + n2 + n3 + n4 + n5 + n6 + n7;
     }
 
     // Adds Eight given numbers
-    public static int AddEightNumbers(int n1, int n2, int n3, int n4, int n5, int n6, int n7,
-            int n8) {
+    public static double AddEightNumbers(double n1, double n2, double n3, double n4, double n5, double n6, double n7,
+            double n8) {
         return n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8;
     }
 
     // Adds Nine given numbers
-    public static int AddNineNumbers(int n1, int n2, int n3, int n4, int n5, int n6, int n7,
-            int n8, int n9) {
+    public static double AddNineNumbers(double n1, double n2, double n3, double n4, double n5, double n6, double n7,
+            double n8, double n9) {
         return n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8 + n9;
     }
 
     // Adds Ten given numbers
-    public static int AddTenNumbers(int n1, int n2, int n3, int n4, int n5, int n6, int n7,
-            int n8, int n9, int n10) {
+    public static double AddTenNumbers(double n1, double n2, double n3, double n4, double n5, double n6, double n7,
+            double n8, double n9, double n10) {
         return n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8 + n9 + n10;
     }
 
     // Adds all the numbers of a given array
-    public static int AddAllNumbers(int[] ArrayOfNumbers) {
-        int x = 0;
-        for (int i = 0; i < ArrayOfNumbers.length; i++) {
+    public static double AddAllNumbers(double[] ArrayOfNumbers) {
+        double x = 0;
+        for (double i = 0; i < ArrayOfNumbers.length; i++) {
             x = 0;
         }
         return 0;
     }
 
     // Adds 1 to a given number
-    public static int Add1(int n) {
+    public static double Add1(double n) {
         return n + 1;
     }
 
     // Adds 2 to a given number
-    public static int Add2(int n) {
+    public static double Add2(double n) {
         return n + 2;
     }
 
     // Adds 3 to a given number
-    public static int Add3(int n) {
+    public static double Add3(double n) {
         return n + 3;
     }
 
     // Adds 4 to a given number
-    public static int Add4(int n) {
+    public static double Add4(double n) {
         return n + 4;
     }
 
     // Adds 5 to a given number
-    public static int Add5(int n) {
+    public static double Add5(double n) {
         return n + 5;
     }
 
     // Adds 6 to a given number
-    public static int Add6(int n) {
+    public static double Add6(double n) {
         return n + 6;
     }
 
     // Adds 7 to a given number
-    public static int Add7(int n) {
+    public static double Add7(double n) {
         return n + 7;
     }
 
     // Adds 8 to a given number
-    public static int Add8(int n) {
+    public static double Add8(double n) {
         return n + 8;
     }
 
     // Adds 9 to a given number
-    public static int Add9(int n) {
+    public static double Add9(double n) {
         return n + 9;
     }
 
     // Adds 10 to a given number
-    public static int Add10(int n) {
+    public static double Add10(double n) {
         return n + 10;
     }
 
     // Finds the predessor or subtracts 1 from a given number
-    public static int Decrement(int n) {
+    public static double Decrement(double n) {
         return n - 1;
     }
 
     // Subtracts two given numbers
-    public static int SubTwoNumbers(int n1, int n2) {
+    public static double SubTwoNumbers(double n1, double n2) {
         return n1 - n2;
     }
 
     // Subtracts three given numbers
-    public static int SubThreeNumbers(int n1, int n2, int n3) {
+    public static double SubThreeNumbers(double n1, double n2, double n3) {
         return n1 - n2 - n3;
     }
 
     // Subtracts four given numbers
-    public static int SubFourNumbers(int n1, int n2, int n3, int n4) {
+    public static double SubFourNumbers(double n1, double n2, double n3, double n4) {
         return n1 - n2 - n3 - n4;
     }
 
     // Subtracts five given numbers
-    public static int SubFiveNumbers(int n1, int n2, int n3, int n4, int n5) {
+    public static double SubFiveNumbers(double n1, double n2, double n3, double n4, double n5) {
         return n1 - n2 - n3 - n4 - n5;
     }
 
     // Subtracts six given numbers
-    public static int SubSixNumbers(int n1, int n2, int n3, int n4, int n5, int n6) {
+    public static double SubSixNumbers(double n1, double n2, double n3, double n4, double n5, double n6) {
         return n1 - n2 - n3 - n4 - n5 - n6;
     }
 
     // Subtracts seven given numbers
-    public static int SubSevenNumbers(int n1, int n2, int n3, int n4, int n5, int n6, int n7) {
+    public static double SubSevenNumbers(double n1, double n2, double n3, double n4, double n5, double n6, double n7) {
         return n1 - n2 - n3 - n4 - n5 - n6 - n7;
     }
 
     // Subtracts Eight given numbers
-    public static int SubEightNumbers(int n1, int n2, int n3, int n4, int n5, int n6, int n7,
-            int n8) {
+    public static double SubEightNumbers(double n1, double n2, double n3, double n4, double n5, double n6, double n7,
+            double n8) {
         return n1 - n2 - n3 - n4 - n5 - n6 - n7 - n8;
     }
 
     // Subtracts Nine given numbers
-    public static int SubNineNumbers(int n1, int n2, int n3, int n4, int n5, int n6, int n7,
-            int n8, int n9) {
+    public static double SubNineNumbers(double n1, double n2, double n3, double n4, double n5, double n6, double n7,
+            double n8, double n9) {
         return n1 - n2 - n3 - n4 - n5 - n6 - n7 - n8 - n9;
     }
 
     // Subtracts Ten given numbers
-    public static int SubTenNumbers(int n1, int n2, int n3, int n4, int n5, int n6, int n7,
-            int n8, int n9, int n10) {
+    public static double SubTenNumbers(double n1, double n2, double n3, double n4, double n5, double n6, double n7,
+            double n8, double n9, double n10) {
         return n1 - n2 - n3 - n4 - n5 - n6 - n7 - n8 - n9 - n10;
     }
 
     // Subtracts Two from a given number
-    public static int Sub2(int n) {
+    public static double Sub2(double n) {
         return n - 2;
     }
 
     // Subtracts Three from a given number
-    public static int Sub3(int n) {
+    public static double Sub3(double n) {
         return n - 3;
     }
 
     // Subtracts Four from a given number
-    public static int Sub4(int n) {
+    public static double Sub4(double n) {
         return n - 4;
     }
 
     // Subtracts Five from a given number
-    public static int Sub5(int n) {
+    public static double Sub5(double n) {
         return n - 5;
     }
 
     // Subtracts Six from a given number
-    public static int Sub6(int n) {
+    public static double Sub6(double n) {
         return n - 6;
     }
 
     // Subtracts Seven from a given number
-    public static int Sub7(int n) {
+    public static double Sub7(double n) {
         return n - 7;
     }
 
     // Subtracts Eight from a given number
-    public static int Sub8(int n) {
+    public static double Sub8(double n) {
         return n - 8;
     }
 
     // Subtracts Nine from a given number
-    public static int Sub9(int n) {
+    public static double Sub9(double n) {
         return n - 9;
     }
 
     // Subtracts Ten from a given number
-    public static int Sub10(int n) {
+    public static double Sub10(double n) {
         return n - 10;
     }
 
+    // Multiplies two given numbers
+    public static double MulTwo(double n1, double n2) {
+        return n1 * n2;
+    }
+
+    // Doubles a given number
+    public static double Double(double n) {
+        return 2 * n;
+    }
+
+    // Multiplies three given numbers
+    public static double MulThree(double n1, double n2, double n3) {
+        return n1 * n2 * n3;
+    }
+
+    // Triples a given number
+    public static double Triple(double n) {
+        return 3 * n;
+    }
+
+    // Multiplies four given numbers
+    public static double MulFour(double n1, double n2, double n3, double n4) {
+        return n1 * n2 * n3 * n4;
+    }
+
+    // Multiplies five given numbers
+    public static double MulFive(double n1, double n2, double n3, double n4, double n5) {
+        return n1 * n2 * n3 * n4 * n5;
+    }
+
+    // Multiplies six given numbers
+    public static double MulSix(double n1, double n2, double n3, double n4, double n5, double n6) {
+        return n1 * n2 * n3 * n4 * n5 * n6;
+    }
+
+    // Multiplies seven given numbers
+    public static double MulSeven(double n1, double n2, double n3, double n4, double n5, double n6, double n7) {
+        return n1 * n2 * n3 * n4 * n5 * n6 * n7;
+    }
+
+    // Multiplies eight given numbers
+    public static double MulEight(double n1, double n2, double n3, double n4, double n5, double n6, double n7,
+            double n8) {
+        return n1 * n2 * n3 * n4 * n5 * n6 * n7 * n8;
+    }
+
+    // Multiplies nine given numbers
+    public static double MulNine(double n1, double n2, double n3, double n4, double n5, double n6, double n7, double n8,
+            double n9) {
+        return n1 * n2 * n3 * n4 * n5 * n6 * n7 * n8 * n9;
+    }
+
+    // Multiplies ten given numbers
+    public static double MulTen(double n1, double n2, double n3, double n4, double n5, double n6, double n7, double n8,
+            double n9, double n10) {
+        return n1 * n2 * n3 * n4 * n5 * n6 * n7 * n8 * n9 * n10;
+    }
+
+    // Multiplies four to a given number
+    public static double Mul4(double n) {
+        return 4 * n;
+    }
+
+    // Multiplies five to a given number
+    public static double Mul5(double n) {
+        return 5 * n;
+    }
+
+    // Multiplies six to a given number
+    public static double Mul6(double n) {
+        return 6 * n;
+    }
+
+    // Multiplies seven to a given number
+    public static double Mul7(double n) {
+        return 7 * n;
+    }
+
+    // Multiplies eight to a given number
+    public static double Mul8(double n) {
+        return 8 * n;
+    }
+
+    // Multiplies nine to a given number
+    public static double Mul9(double n) {
+        return 9 * n;
+    }
+
+    // Multiplies ten to a given number
+    public static double Mul10(double n) {
+        return 10 * n;
+    }
+
+    // Divides two given numbers
+    public static double Div2(double n1, double n2) {
+        return n1 / n2;
+    }
+
+    // Halfs a given number
+    public static double Half(double n) {
+        return n / 2;
+    }
+
+    // Quaters a given number
+    public static double Quater(double n) {
+        return n / 4;
+    }
+
+    // Returns the reciprocal of a number
+    public static double Reciprocal(double n) {
+        double root = 0;
+        try {
+            root = 1 / n;
+        } catch (ArithmeticException e) {
+            System.out.println("NamishJava Fatal Error: Division by 0 is not-defined! 0 has no reciprocal.");
+        }
+        return root;
+    }
+
     // Returns the value of a decade
-    public static int Decade() {
+    public static double Decade() {
         return 10;
     }
 
     // Returns the value of a half-decade
-    public static int HalfDecade() {
+    public static double HalfDecade() {
         return Decade() / 2;
     }
 
     // Returns the value of a quater-decade
-    public static int QuaterDecade() {
+    public static double QuaterDecade() {
         return Decade() / 4;
     }
 
     // Divides the value of a decade with some other number
-    public static int DivideDecade(int n) {
+    public static double DivideDecade(double n) {
         return Decade() / n;
     }
 
     // Returns the value of a century
-    public static int Century() {
+    public static double Century() {
         return 100;
     }
 
     // Returns the value of a half-century
-    public static int HalfCentury() {
+    public static double HalfCentury() {
         return Century() / 2;
     }
 
     // Returns the value of quater-century
-    public static int QuaterCentury() {
+    public static double QuaterCentury() {
         return Century() / 4;
     }
 
     // Divides the value of a century with some other number
-    public static int DivideCentury(int n) {
+    public static double DivideCentury(double n) {
         return Century() / n;
     }
 
     // Returns the value of a Millennium
-    public static int Millennium() {
+    public static double Millennium() {
         return 1000;
     }
 
     // Returns the value of a Half-Millenium
-    public static int HalfMillennium() {
+    public static double HalfMillennium() {
         return Millennium() / 2;
+    }
+
+    // Returns the value of Kilo
+    public static double Kilo() {
+        return 1000;
+    }
+
+    // Returns the value of Hecto
+    public static double Hecto() {
+        return 100;
+    }
+
+    // Returns the value of Deca
+    public static double Deca() {
+        return 10;
+    }
+
+    // Returns the value of a Deci
+    public static double Deci() {
+        return 1 / 10;
+    }
+
+    // Returns the value of a Centi
+    public static double Centi() {
+        return 1 / 100;
+    }
+
+    // Returns the value of a Milli
+    public static double Milli() {
+        return 1 / 1000;
+    }
+
+    // The Quantity class
+    public class Quantity {
+        // The length quantity
+        public static double Length() {
+            return 8080;
+        }
+
+        // The force quantity
+        public static double Force() {
+            return 8081;
+        }
+
+        // The Mass or Weight quantity
+        public static double Mass() {
+            return 8082;
+        }
+    }
+
+    // Returns the Standard Unit of different physical quantities
+    public static String StandardUnit(double MainQuantity) {
+        String Madoubleext = "";
+        if (MainQuantity == Quantity.Length()) {
+            Madoubleext = "The Standard Unit of Length is Metre / Meter (M).";
+        } else if (MainQuantity == Quantity.Force()) {
+            Madoubleext = "The Standard Unit of Force is Newton (N)";
+        }
+        return Madoubleext;
+    }
+
+    // Returns the Percentage in double form. You must convert it back to percentage
+    // using NamishMath.ParseCent(p) method
+    public static double GetPerCent(double parts, double total) {
+        double pbt = parts / total;
+        double percent = pbt * 100;
+        return percent;
+    }
+
+    // Returns the Percentage in String form.
+    public static String ParseCent(double p) {
+        return String.valueOf(p) + "%";
     }
 
     // Mensuration Zone
@@ -460,24 +654,33 @@ public class NamishMath {
                 return String.valueOf(diagonalLength) + " " + Unit;
             }
         }
+
+        // Triangle Zone
+        /* || NOTICE || This is only applicable for Equilateral triangle. */
+        public class Triangle {
+            // Finds the area of the triangle
+            public static String Area(double side, String Unit) {
+                return "kick!";
+            }
+        }
     }
 
     // The Unit-Converter class
 
-    // First Introduced in NamishJava 1.0.1 and NamishMath 1.0.1
-    // Latest Update on 25 October 2022
+    // First doubleroduced in NamishJava 1.0.1 and NamishMath 1.0.1
+    // Latest Update on 31 October 2022
     public class UnitConverter {
 
     }
 
-    // Pythagoream Triplet class
-    public class PythagoreamTriplet {
+    // Pythagorean Triplet class
+    public class PythagoreanTriplet {
         /*
-         * Find out all the numbers of a pythagoream triplet
+         * Find out all the numbers of a pythagorean triplet
          * || NOTICE || , The number to be entered must be a even number!
          */
 
-        public static double[] FindAll(int n2) {
+        public static double[] FindAll(double n2) {
             double n = n2 / 2;
             double nsq1 = NamishMath.findSquare(n);
             double mainNsq1 = nsq1 + 1;
@@ -486,4 +689,7 @@ public class NamishMath {
             return pyt;
         }
     }
+
+    //
+
 }

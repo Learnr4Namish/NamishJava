@@ -2,8 +2,10 @@ import in.namishkumar.namishjava.*;
 
 public class sample_console {
      public static void main(String[] args) {
-          for (int x = 0; x < NamishMath.PythagoreamTriplet.FindAll(4).length; x++) {
-               Terminal.writeLine(NamishMath.PythagoreamTriplet.FindAll(4)[x]);
-          }
+          Terminal.writeLine("Wow! Welcome to NamishJava!");
+          Terminal.writeLine(Namish.Version);
+          Object UserNumber = NamishInput.readLine(InputTypes.Number(), "Please enter a number.");
+          Terminal.writeLine("The Square of your number is "
+                    + NamishMath.findSquare(Double.valueOf(String.valueOf(UserNumber))));
      }
 }

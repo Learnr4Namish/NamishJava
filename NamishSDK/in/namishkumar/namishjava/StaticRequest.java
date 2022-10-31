@@ -1,5 +1,6 @@
 package NamishSDK.in.namishkumar.namishjava;
 
+// Welcome to NamishJava 1.0.0
 import RequestsHTTP.ParameterStringBuilder;
 
 public class StaticRequest {

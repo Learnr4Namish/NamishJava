@@ -1,4 +1,4 @@
-package NamishSDK.in.namishkumar.namishjava.RequestsHTTP;
+package in.namishkumar.namishjava.RequestsHTTP;
 
 public class ParameterStringBuilder {
     public static String getParamsString(Map<String, String> params)
